@@ -15,7 +15,7 @@ class Contact extends Component {
     ];
     return (
       <footer className="contact">
-        <img src="../images/contact.png" useMap="#linkmap" />
+        <img src="./images/contact.png" useMap="#linkmap" />
         <map name="linkmap">
           {areas.map(item => (
             <area

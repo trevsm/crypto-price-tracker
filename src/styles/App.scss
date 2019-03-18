@@ -21,8 +21,11 @@ body {
   .symbol,
   .price {
     width: 100%;
-
     opacity: 0.8;
+    div {
+      height: 25px;
+      padding: 5px;
+    }
   }
   .symbol {
     text-align: left;
@@ -30,7 +33,6 @@ body {
   }
 
   .price {
-    font-size: 14pt;
     text-align: right;
     font-family: "Cutive Mono", monospace;
   }

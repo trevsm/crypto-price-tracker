@@ -72,7 +72,6 @@ class App extends Component {
         KCS: { USD: 0 },
         GNT: { USD: 0 },
         REPO: { USD: 0 },
-        INB: { USD: 0 },
         PAI: { USD: 0 },
         ARK: { USD: 0 },
         ARDR: { USD: 0 },
@@ -84,8 +83,8 @@ class App extends Component {
     this.tick = this.tick.bind(this);
   }
   componentDidMount() {
-    this.tick();
-    window.setInterval(this.tick, 1000);
+    //this.tick();
+    //window.setInterval(this.tick, 1000);
   }
   tick() {
     const { listings } = this.state;
