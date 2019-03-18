@@ -2,9 +2,18 @@
   box-sizing: border-box;
 }
 body {
-  background-color: dimgrey;
-  h1 {
-    color: #27aedb;
-    text-align: center;
+  background-color: #e0e0e0;
+}
+.listing {
+  display: flex;
+  div {
+    margin-left: 10px;
+    text-align: left;
+    width: 50px;
+  }
+  .symbol {
+  }
+  .price {
+    text-align: right;
   }
 }
