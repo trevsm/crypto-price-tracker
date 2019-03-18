@@ -1,0 +1,22 @@
+/* ------Contact------ */
+.contact {
+  width: 100px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+  img {
+    width: 100%;
+  }
+  map {
+    area {
+      outline: none;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact {
+    position: relative;
+    margin: 0 auto;
+  }
+}

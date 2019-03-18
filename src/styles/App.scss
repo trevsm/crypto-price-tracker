@@ -1,19 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Quicksand");
+
 * {
   box-sizing: border-box;
 }
+
 body {
-  background-color: #e0e0e0;
+  background-color: white;
 }
-.listing {
+
+.listings {
   display: flex;
-  div {
-    margin-left: 10px;
-    text-align: left;
-    width: 50px;
+  width: 80vw;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 10px 20px;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .symbol,
+  .price {
+    width: 100%;
+
+    opacity: 0.8;
   }
   .symbol {
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
   }
+
   .price {
+    font-size: 14pt;
     text-align: right;
+    font-family: "Cutive Mono", monospace;
   }
+}
+.box-shadow {
+  box-shadow: 0 1px 10px 1px rgba(40, 41, 44, 0.1);
+}
+
+.price div:nth-child(2n + 1),
+.symbol div:nth-child(2n + 1) {
+  background-color: #efefef;
 }
