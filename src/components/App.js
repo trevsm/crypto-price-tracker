@@ -83,8 +83,8 @@ class App extends Component {
     this.tick = this.tick.bind(this);
   }
   componentDidMount() {
-    //this.tick();
-    //window.setInterval(this.tick, 1000);
+    this.tick();
+    window.setInterval(this.tick, 1000);
   }
   tick() {
     const { listings } = this.state;
