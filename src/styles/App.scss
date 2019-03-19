@@ -7,41 +7,66 @@
 body {
   background-color: white;
 }
-
-.listings {
+.overview {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.listings {
   width: 80vw;
   min-width: 200px;
   max-width: 300px;
-  padding: 10px 20px;
-  background-color: #fbfbfb;
+  padding: 20px;
+  background-color: #f7f7f7;
   margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  .symbol,
-  .price {
-    width: 100%;
-    opacity: 0.8;
-    div {
-      height: 25px;
-      padding: 5px;
-    }
-  }
-  .symbol {
-    text-align: left;
-    font-family: "Quicksand", sans-serif;
-  }
+  margin-bottom: 4vh;
+  margin-top: 4vh;
+}
+.symbol {
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+}
 
-  .price {
-    text-align: right;
-    font-family: "Cutive Mono", monospace;
-  }
+.price {
+  text-align: right;
+  width: 100%;
+  font-size: 13pt;
+  font-weight: lighter;
+  font-family: monospace;
 }
 .box-shadow {
   box-shadow: 0 1px 10px 1px rgba(40, 41, 44, 0.1);
 }
+tr:nth-child(2n + 1) {
+  background-color: #e8e8e8;
+}
+td {
+  display: flex;
+  padding: 5px 10px;
+}
+/*------------status color animation-----------*/
 
-.price div:nth-child(2n + 1),
-.symbol div:nth-child(2n + 1) {
-  background-color: #efefef;
+.up {
+  animation: green 2s;
+}
+.down {
+  animation: red 2s;
+}
+@keyframes green {
+  0% {
+    color: green;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes red {
+  0% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
 }
