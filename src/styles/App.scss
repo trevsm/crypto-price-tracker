@@ -47,7 +47,9 @@ td {
   padding: 5px 10px;
 }
 /*------------status color animation-----------*/
-
+@function text-contrast($background, $val) {
+  @return ($background + $val);
+}
 .up {
   animation: green 4s;
 }

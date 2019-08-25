@@ -5,7 +5,8 @@ import Contact from "./Contact";
 import "../styles/App.scss";
 
 //not paid free api key -- max of 50 calls per second
-const API_KEY = "";
+const API_KEY =
+  "9ade9fcffdcbb043842f00eead55cafcb94c4de4743b6b2ccf872a2742babeaa";
 
 class App extends Component {
   constructor(props) {
