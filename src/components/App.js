@@ -89,7 +89,7 @@ class App extends Component {
 
   componentDidMount() {
     this.tick();
-    window.setInterval(this.tick, 100);
+    window.setInterval(this.tick, 1000);
   }
 
   async tick() {
